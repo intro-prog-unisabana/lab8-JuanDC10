@@ -8,3 +8,10 @@ import sys
 
 def calcular_carga(total_load, num_supports):
     return total_load / num_supports
+
+def main():
+    try:
+        if len(sys.argv) != 3:
+            raise ValueError
+        total_load = float(sys.argv[1])
+        num_supports = float(sys.argv[2])
